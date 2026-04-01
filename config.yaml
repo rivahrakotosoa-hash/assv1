@@ -1,0 +1,30 @@
+# Configuration de l'assistant vocal
+
+llm:
+  model: "llama3.2:3b"
+  url: "http://localhost:11434/api/generate"
+  max_tokens: 150
+  temperature: 0.7
+  system_prompt: "Tu es un assistant vocal français amical et naturel. Tu réponds de manière concise en 2-3 phrases maximum. Tu parles toujours en français."
+
+whisper:
+  model: "tiny"
+  language: "fr"
+  sample_rate: 16000
+
+audio:
+  sample_rate: 16000
+  channels: 1
+  chunk_size: 1024
+  silence_threshold: 500  # Ajustez selon votre microphone
+  silence_duration: 1.5
+
+tts:
+  engine: "gtts"  # Utiliser gTTS par défaut (plus simple)
+  rate: 170
+  volume: 0.9
+  
+assistant:
+  wake_word: null
+  exit_words: ["au revoir", "arrête", "stop", "quitter", "bye"]
+  debug: true

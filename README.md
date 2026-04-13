@@ -1,1 +1,1 @@
-# assv1
+Progrqmme assistant vocal alimemte par un LLM local 

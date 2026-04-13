@@ -1,1 +1,1 @@
-Progrqmme assistant vocal alimemte par un LLM local 
+Programme assistant vocal alimemte par un LLM local 
